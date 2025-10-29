@@ -21,36 +21,71 @@
 .nav-container {
     display: flex;
     margin: 0 auto;
-    height: 70px;
-    justify-content: space-between;
+    // height: 70px;
+    justify-content: space-evenly;
     border-radius: 10px;
     filter: blur(30%);
-    
+
 
     a {
         color: #fff;
-        line-height: 65px;
+        line-height: 70px;
     }
-    
+
     div {
-        
-        a {
-            font-size: 2em;
-            
+        display: block;
+        font-size: 2em;
+
+        span:first-child {
+            font-weight: 900;
+            float: left;
+            margin-right: 10px;
+
+            ::after {
+                display: none;
+            }
         }
+
+        ::after {
+            content: "";
+            display: block;
+            background-color: #fff;
+            transition: 0.3s;
+            height: 2px;
+            width: 0;
+        }
+
+        :hover::after {
+            width: 100%;
+        }
+
     }
-    
-    
-    
+
     nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        
-        a {
-            font-size: 1.3em;
-            width: 150px;
+
+        span {
+            margin: 0 2.5vw;
+
+            a {
+                font-size: 1.3em;
+            }
+
+            ::after {
+                content: "";
+                display: block;
+                background-color: #fff;
+                transition: 0.3s;
+                height: 2px;
+                width: 0;
+            }
+
+            :hover::after {
+                width: 100%;
+            }
         }
 
         @include respond-to(phone) {
@@ -59,11 +94,13 @@
     }
 
     @include respond-to(desktop) {
-        width: 75vw;
+        width: 80vw;
     }
 
     @include respond-to(tablet) {
         width: 100vw;
+        flex-wrap: wrap;
+        align-content: center;
     }
 
 }

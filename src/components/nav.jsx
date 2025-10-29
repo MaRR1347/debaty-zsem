@@ -9,13 +9,13 @@ export default function Navbar() {
         <>
             <div className="nav-container">
                 <div> 
-                    <Link to="/"><b>Debaty</b> ZSEM</Link>
+                    <Link to="/"><span>Debaty</span>ZSEM</Link>
                 </div>
                 <nav>
-                    <Link to="/rejestracja">Rejestracja</Link>
-                    <Link to="/tabela">Tabela</Link>
-                    <Link to="/zasady">Zasady</Link>
-                    <Link to="/regulamin">Regulamin</Link>
+                    <span><Link to="/rejestracja">Rejestracja</Link></span>
+                    <span><Link to="/harmonogram">Harmonogram</Link></span>
+                    <span><Link to="/zasady">Zasady</Link></span>
+                    <span><Link to="/regulamin">Regulamin</Link></span>
                 </nav>
             </div>
         </>
