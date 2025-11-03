@@ -5,8 +5,6 @@ import Navbar from './components/nav.jsx'
 import Footer from './components/footer.jsx'
 import SpinningLogo from './components/spinning-logo.jsx'
 
-import { Link } from 'react-router-dom';
-
 
 function App() {
 
@@ -30,7 +28,7 @@ function App() {
 
       <main>
         <header>
-          <p className='slideable'>Debaty</p>
+          <p className='slideable oswald-font font-700'>DEBATY</p>
           <div className="logo">
             <SpinningLogo />
           </div>
@@ -38,6 +36,7 @@ function App() {
 
         <aside>
           <p>Jakieś teksty że rozwija to coś tam coś tam Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus! Aliquam, voluptatum alias? Asperiores consectetur deleniti quibusdam iusto et ea! Fugit placeat illum natus numquam cupiditate voluptatibus porro! Tempora, unde.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit recusandae, quis tempore fugiat, et maxime doloribus architecto nobis ipsam necessitatibus qui esse ducimus sapiente aliquam dolores inventore consequatur delectus repellendus?</p>
         </aside>
       </main>
 

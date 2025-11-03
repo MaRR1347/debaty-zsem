@@ -3,13 +3,12 @@ import "./nav.scss";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
- 
 
     return (
         <>
             <div className="nav-container">
                 <div> 
-                    <Link to="/"><span>Debaty</span>ZSEM</Link>
+                    <Link to="/"><span className="oswald-font font-700">Debaty</span><span className="oswald-font font-400">ZSEM</span></Link>
                 </div>
                 <nav>
                     <span><Link to="/rejestracja">Rejestracja</Link></span>
@@ -20,9 +19,4 @@ export default function Navbar() {
             </div>
         </>
     );
-}
-
-async function onClick() {
-    const navigationPromise = navigate('/pages/rejestracja');
-    await navigationPromise;
 }

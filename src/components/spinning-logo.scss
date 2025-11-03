@@ -6,17 +6,16 @@
     transform: rotate(360deg);
   }
 }
-
-.logo-container {
-  position: absolute;
-}
-
 .logo-gear {
+  left: 0;
+  top: 0;
   position: absolute;
   animation: logo-spin infinite 25s linear;
   width: 150px;
 }
 .logo-content {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 150px;
 }

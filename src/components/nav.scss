@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 @mixin respond-to($breakpoint) {
     @if $breakpoint ==phone {
         @media (max-width: 768px) {
@@ -20,21 +22,45 @@
 
 .nav-container {
     display: flex;
-    margin: 0 auto;
-    // height: 70px;
-    justify-content: space-evenly;
-    border-radius: 10px;
-    filter: blur(30%);
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-sizing: border-box;
+    left: 50vw;
+    top: 30px;
+    margin: auto;
+
+    min-height: 80px;
+    width: 90vw;
+    max-width: 1100px;
+    padding: 0 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
 
 
     a {
         color: #fff;
-        line-height: 70px;
+
+        &:hover {
+            text-shadow: 0 0 3px rgb(255, 255, 255);
+        }
     }
 
     div {
-        display: block;
-        font-size: 2em;
+        display: flex;
+        align-items: center;
+        font-size: 1.8em;
+        width: auto;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
 
         span:first-child {
             font-weight: 900;
@@ -46,17 +72,23 @@
             }
         }
 
-        ::after {
+        &::after {
             content: "";
             display: block;
-            background-color: #fff;
-            transition: 0.3s;
-            height: 2px;
+            position: relative;
+            visibility: collapse;
             width: 0;
+            height: 3px;
+            left: -150px;
+            top: 25px;
+            transition: 0.3s;
+            background-color: rgb(227, 30, 36);
+            box-shadow: 0 0 8px 3px rgb(227, 30, 36);
         }
 
-        :hover::after {
-            width: 100%;
+        &:hover::after {
+            visibility: visible;
+            width: 150px;
         }
 
     }
@@ -64,43 +96,75 @@
     nav {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
 
         span {
-            margin: 0 2.5vw;
+            padding: 10px 15px;
 
             a {
-                font-size: 1.3em;
+                font-size: 1.1rem;
+                font-weight: 400;
             }
 
-            ::after {
+            &::after {
                 content: "";
                 display: block;
-                background-color: #fff;
-                transition: 0.3s;
-                height: 2px;
+                position: relative;
+                visibility: collapse;
                 width: 0;
+                height: 1px;
+                top: 5px;
+                transition: 0.3s;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0 0 6px 1px rgb(255, 255, 255);
             }
 
-            :hover::after {
+            &:hover::after,
+            :focus::after {
+                visibility: visible;
                 width: 100%;
             }
         }
-
-        @include respond-to(phone) {
-            //dssssssssssssssssssssssssssssss
-        }
-    }
-
-    @include respond-to(desktop) {
-        width: 80vw;
     }
 
     @include respond-to(tablet) {
-        width: 100vw;
-        flex-wrap: wrap;
-        align-content: center;
+        a {
+            font-size: 1.8rem;
+        }
+
+        nav span a {
+            font-size: 1rem;
+        }
     }
 
+    @include respond-to(phone) {
+        top: 10px;
+        justify-content: center;
+
+        div a,
+        div a span {
+            padding-top: 10px;
+        }
+
+        nav {
+            flex-basis: 90vw;
+        }
+    }
+
+}
+
+.oswald-font {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-400 {
+    font-weight: 400;
 }
