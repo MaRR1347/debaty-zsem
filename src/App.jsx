@@ -4,6 +4,7 @@ import './App.scss'
 import Navbar from './components/nav.jsx'
 import Footer from './components/footer.jsx'
 import SpinningLogo from './components/spinning-logo.jsx'
+import Background from './components/background.jsx'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div>
+      <Background />
       <Navbar />
 
       <main>
