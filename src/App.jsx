@@ -37,8 +37,7 @@ function App() {
         </header>
 
         <aside>
-          <p>Jakieś teksty że rozwija to coś tam coś tam Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ducimus! Aliquam, voluptatum alias? Asperiores consectetur deleniti quibusdam iusto et ea! Fugit placeat illum natus numquam cupiditate voluptatibus porro! Tempora, unde.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit recusandae, quis tempore fugiat, et maxime doloribus architecto nobis ipsam necessitatibus qui esse ducimus sapiente aliquam dolores inventore consequatur delectus repellendus?</p>
+          <p> Debaty Elektryka to organizowane od wielu lat wydarzenie, w którym przedstawiciele klas mierzą się w dyskusjach na wybrane tematy. To nie tylko forma rywalizacji, ale przede wszystkim okazja do rozwijania umiejętności argumentacji, logicznego myślenia i pracy zespołowej.</p>
         </aside>
       </main>
 

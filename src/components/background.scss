@@ -4,15 +4,28 @@
     width: 100vw;
     height: 100%;
     top: 0;
+    left: 0;
     overflow: hidden;
-    z-index: -1;
-    img{
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        padding: 35px;
-        object-fit: cover;
-        opacity: 0.8;
-        filter: invert(1);
+    z-index: 1;
+    transition: 0.2s ease;
+    opacity: 0.1;
+    
+    section {
+        transform: rotate(var(--rotation));
+        img {
+            transition: 0.2s ease;
+            width: 30px;
+            height: 30px;
+            padding: 35px;
+            object-fit: cover;
+            filter: invert(1);
+            background: transparent;
+
+            &:hover {
+                transform: rotate(90deg) scale(1.1);
+            }
+
+        }
+
     }
 }

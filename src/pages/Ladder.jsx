@@ -1,14 +1,16 @@
 import React from "react";
 import "./ladder.scss";
 
-import Navbar from "../components/nav";
-import Footer from "../components/footer";
+import Background from "../components/background.jsx";
+import Navbar from "../components/nav.jsx";
+import Footer from "../components/footer.jsx";
 
 export default function Ladder() {
     return (
         <>
+            <Background />
             <Navbar />
-            <p>Strona "Harmonogram" w budowie...</p>
+            <p>Harmonogram zostanie umieszczony po zakończeniu rejestracji</p>
             <Footer />
         </>
     )

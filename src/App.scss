@@ -32,10 +32,13 @@
 }
 
 main {
-  
+  display: flex;
+  flex-wrap: nowrap;
   header {
     display: flex;
     flex-wrap: wrap;
+    width: 30vw;
+    min-width: 300px;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -50,17 +53,18 @@ main {
 
   @include respond-to(desktop) {
     header {
-      width: 65vw;
+      // width: 65vw;
       float: left;
     }
     nav {
       width: 35vw;
       float: left;
     }
+  } 
+  aside {
+    width: 70vw;
   }
-  
 }
-
 
 .logo {
   position: relative;

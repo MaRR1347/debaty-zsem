@@ -2,25 +2,15 @@ import React, { useState } from "react";
 import "./background.scss";
 
 export default function Background() {
-    const [cols, setCols] = useState(Math.ceil((window.innerWidth) / 100));
-    const [rows, setRows] = useState(Math.ceil((window.innerHeight) / 100));
-    const SVGS = ['/background/arrow.svg', '/background/circle.svg', '/background/circle-dashed.svg', '/background/line.svg', '/background/plus.svg'];
+    const SVGS = ['/background/arrow.svg', '/background/circle.svg', '/background/circle-dashed.svg', '/background/line.svg', '/background/plus.svg', '/icons/people.png', '/icons/speaker.png', '/icons/user-avatar.png'];
+    const cols = Math.ceil((window.innerWidth) / 100);
+    const rows = Math.ceil((window.innerHeight) / 100);
     let svgArray = [];
 
-    // window.addEventListener('resize', SetGridSize);
-    // RandomSVG();
-    // RandomSVG();
-
-    // function SetGridSize() {
-    //     setCols((window.innerWidth) / 100);
-    //     setRows((window.innerHeight) / 100);
-    // }
     function RandomSVG() {
-        for (let i = 1; i <= cols; i++) {
-            for (let j = 1; j <= rows; j++) {
-                let r = Math.floor(Math.random(1) * SVGS.length * 2);
-                svgArray[i * j] = r;
-            }
+        for (let i = 1; i <= cols * rows; i++) {
+            let r = Math.floor(Math.random(1) * SVGS.length * 3);
+            svgArray[i] = r;
         }
     }
     return (
@@ -30,22 +20,20 @@ export default function Background() {
                 'gridTemplateRows': `repeat(${rows}, 1fr)`
             }}>
                 {RandomSVG()}
-                {/* {(() => {
-                    if (svgArray.length == 0){
-                        alert("Pusta jest jak twój łeb");
-                    } else alert(svgArray[1]);
-                })()} */}
                 {svgArray.map(function (val, key) {
                     if (val < SVGS.length) {
+                        let r = Math.round(Math.random() * 7) * 45;
                         return (
-                            <img key={key} src={SVGS[val]} style={{
-                                gridColumn: `${(key % cols)}`,
-                                gridRow: `${Math.floor(key / cols)}`
+                            <section key={key} style={{
+                                gridArea: `${Math.ceil((key + 1) / cols)} / ${(key % cols) + 1}`,
+                                '--rotation': `${r}deg`
                             }}
-                            />
+                            draggable="false">
+                                <img src={SVGS[val]} draggable="false"/>
+                            </section>
                         );
                     }
-                })}     
+                })}
 
             </div>
         </>
