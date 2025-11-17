@@ -26,21 +26,21 @@ export default function Register() {
     <>
       <Background />
       <Navbar />
-      <main>
-        <main>
-          <header>
-            <p>Rejestracja</p>
-          </header>
-          <article>
-            <p>Aby zarejestrować swoją drużynę, wejdź w poniższy link i wypełnij formularz zgłoszeniowy: </p>
-            <a href="https://google.forms.com">
-              <img src="/icons/form.png" alt="formularz" className="form-icon"/>
-            </a>
-          </article>
-        </main>
+
+      <main className='register-main'>
+        <header>Rejestracja</header>
+
+        <section>
+          <p>Aby zarejestrować swoją drużynę, wejdź w poniższy link i wypełnij formularz zgłoszeniowy: </p>
+          <a href="https://tiny.pl/7nc6ny1b" className='red-underline'>
+            <img src="/icons/form.png" alt="formularz"/>
+          </a>
+        </section>
       </main>
 
-      <Footer />
+      <section className='footer'>
+        <Footer />
+      </section>
     </>
   )
 }

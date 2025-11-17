@@ -1,15 +1,15 @@
 footer {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     min-height: 140px;
-    bottom: 0;
-    left: 0;
+    margin-top: 40px;
+    // bottom: 0;
+    // left: 0;
     justify-content: space-evenly;
-    background-color: #0f0f0f;
-    z-index: 1000;
-
+    background-color: #0a0a0a;
+    z-index: 100;
 
     .header {
         color: #ffffff;
@@ -27,7 +27,6 @@ footer {
         align-items: center;
         padding: 15px 0;
 
-
         >div {
             display: flex;
             flex-direction: row;
@@ -36,10 +35,28 @@ footer {
             align-items: center;
             margin: 0 15px;
 
-            >img {
+            .social-logo {
                 width: 80px;
                 height: 80px;
                 margin: 0 10px;
+            }
+            >span {
+                position: relative;
+            }
+            .logo-background {
+                position: absolute;
+                display: block;
+                box-sizing: border-box;
+                width: 80px;
+                height: 80px;
+                left: 10px;
+                border-radius: 50%;
+                box-shadow: 0 0 15px #222222;
+                background-color: #1a1a1a;
+                z-index: -1;
+            }
+            .zsem-logo {
+                transform: scale(0.85);
             }
 
             .social_card {

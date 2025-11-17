@@ -10,8 +10,27 @@ export default function Info() {
         <>
             <Background />
             <Navbar />
-            <p>Strona "Regulamin" w budowie...</p>
-            <Footer />
+
+            <main className="info-main">
+                <section className="info-links">
+                    <a href='/regulamin.pdf' className="red-underline">
+                        <img src="/icons/form.png" alt="form icon" />
+                        <p>Regulamin</p>
+                    </a>
+                    <a href='' className="red-underline">
+                        <img src="/icons/form.png" alt="form icon" />
+                        <p>Karta Jury</p>
+                    </a>
+                    <a href='' className="red-underline">
+                        <img src="/icons/form.png" alt="form icon" />
+                        <p>Karta Techniczna</p>
+                    </a>
+                </section>
+            </main>
+
+            <footer className="footer">
+                <Footer />
+            </footer>
         </>
     )
 }

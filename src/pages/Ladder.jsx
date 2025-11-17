@@ -10,7 +10,11 @@ export default function Ladder() {
         <>
             <Background />
             <Navbar />
-            <p>Harmonogram zostanie umieszczony po zakończeniu rejestracji</p>
+
+            <main>
+                <p>Harmonogram zostanie umieszczony po zakończeniu rejestracji</p>
+            </main>
+
             <Footer />
         </>
     )

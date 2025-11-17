@@ -3,14 +3,14 @@ import "./rules.scss";
 
 import Background from "../components/background.jsx";
 import Navbar from "../components/nav.jsx";
-import Footer from "../components/footer.js";
+import Footer from "../components/footer.jsx";
 
 export default function Rules() {
     return (
         <>
-        <Background />
+            <Background />
             <Navbar />
-            <header>Zasady debat</header>
+
             <main>
                 <section className="rule-card">
                     <img src="/icons/people.png" alt="people" />
@@ -20,6 +20,7 @@ export default function Rules() {
                     <img src="/icons/people.png" alt="people" />
                 </section>
             </main>
+
             <Footer />
         </>
     )

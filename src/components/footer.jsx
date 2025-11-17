@@ -26,7 +26,10 @@ export default function Footer() {
                     {/* <p className="header">Odwiedź</p> */}
                     <div className="socials">
                         <div>
-                            <img src="/logos/zsem.png" alt="ZSEM" />
+                            <span>
+                                <span className="logo-background"/>
+                                <img src="/logos/zsem.png" alt="ZSEM" className="social-logo zsem-logo" />
+                            </span>
                             <div className="social_card ">
                                 <span>
                                     <img src="/icons/website.svg" width="16" height="16" viewBox="0 0 16 16" />
@@ -39,7 +42,10 @@ export default function Footer() {
                             </div>
                         </div>
                         <div>
-                            <img src="/logos/logo_zsemtv.png" alt="ZSEM" />
+                            <span>
+                                <span className="logo-background"/>
+                                <img src="/logos/logo_zsemtv.png" alt="ZSEM" className="social-logo" />
+                            </span>
                             <div className="social_card ">
                                 <span>
                                     <img src="/icons/instagram.svg" width="16" height="16" viewBox="0 0 16 16" />
@@ -55,7 +61,7 @@ export default function Footer() {
                                 </span>
                             </div>
                         </div>
-                      
+
                     </div>
                 </div>
             </footer>

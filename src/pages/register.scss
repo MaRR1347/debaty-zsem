@@ -1,14 +1,68 @@
-header {
-    font-size: 0.80em;
-    margin-bottom: 20px;
+@mixin respond-to($breakpoint) {
+    @if $breakpoint ==phone {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==tablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==desktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
 }
-p {
-    font-size: 1.1em;
-}
-a {
-    .form-icon {
-        filter: invert(1);
-        width: 60px;
-        height: 60px;
+
+$secondary-color: #080808;
+$accent-color: #e31e24;
+
+.register-main {
+    width: 100vw;
+    flex-direction: column;
+
+    header {
+        margin-top: 50px;
+        font-size: 4em;
+        // margin-bottom: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        p {
+            font-size: 1.5em;
+        }
+
+        a {
+            display: block;
+            position: relative;
+            z-index: 100;
+            width: 100px;
+            height: 100px;
+            margin-top: 15px;
+
+            img {
+                filter: invert(1);
+                width: 60px;
+                height: 60px;
+                padding: 20px 0 0 10px;
+                z-index: 100;
+            }
+
+        }
+    }
+
+    @include respond-to(phone) {
+        font-size: 10px;
+
     }
 }

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./background.scss";
 
 export default function Background() {
-    const SVGS = ['/background/arrow.svg', '/background/circle.svg', '/background/circle-dashed.svg', '/background/line.svg', '/background/plus.svg', '/icons/people.png', '/icons/speaker.png', '/icons/user-avatar.png'];
-    const cols = Math.ceil((window.innerWidth) / 100);
-    const rows = Math.ceil((window.innerHeight) / 100);
+    const SVGS = ['/background/arrow.svg', '/background/circle.svg', '/background/circle-dashed.svg', '/background/line.svg', '/background/plus.svg', '/icons/people.png', '/icons/user-avatar.png'];
+    const cols = Math.floor((window.innerWidth) / 100);
+    const rows = Math.floor((window.innerHeight) / 100);
     let svgArray = [];
 
     function RandomSVG() {
