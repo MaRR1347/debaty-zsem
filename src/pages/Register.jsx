@@ -33,8 +33,9 @@ export default function Register() {
         <section>
           <p>Aby zarejestrować swoją drużynę, wejdź w poniższy link i wypełnij formularz zgłoszeniowy: </p>
           <a href="https://tiny.pl/7nc6ny1b" className='red-underline'>
-            <img src="/icons/form.png" alt="formularz"/>
+            <img src="/debaty-zsem/icons/form.png" alt="formularz"/>
           </a>
+          <p>Rejestracja trwa do 28.11.2025r.</p>
         </section>
       </main>
 

@@ -1,21 +1,145 @@
+$secondary-color: #080808;
+$accent-color: #e31e24;
+
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
-    .rule-card {
+    .general-rules,
+    .specific-rules {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        // width: 80vw;
-        // padding: 20px;
-        // border-radius: 30px;
-        // backdrop-filter: blur(5px);
-        background-color: #0e0e0e;
-
-
-        img {
-            filter: invert(1);
-            width: 40px;
-            height: 40px;
-            margin: 0 20px;
+        margin: 40px 0;
+        position: relative;
+        border: 0;
+        
+        h2 {
+            font-size: 3rem;
+            margin: 20px 0;
         }
+        h3 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        
+        p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            text-align: center;
+        }
+    }
+    
+    .general-rules {
+        display: inline-block;
+        max-width: fit-content;
+        padding: 0 40px 40px 40px;
+        border-radius: 50px;
+        background-color: #f9fdff;
+        color: #000;
+        font-weight: 500;
+
+        .rule-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            
+            img {
+                width: 40px;
+                height: 40px;
+                margin: 0 20px;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -3px;
+            top: 5px;
+            border-radius: 50px;
+            background-color: $accent-color;
+            z-index: -1;
+        }
+    }
+
+    .specific-rules {
+
+        .stage-card {
+            min-width: 300px;
+            max-width: 85vw;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: #0f0f0f;
+            border-radius: 50px;
+            padding: 20px 40px;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .flex-row-align {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 10px 0;
+                    
+                    ul {
+                        box-sizing: border-box;
+                        // margin-right: 40px;
+                        li {
+                            width: 210px;
+                            font-size: 1.3em;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                hr {
+                    margin: -10px 0;
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 2px;
+            border-radius: 50px;
+            background-color: $accent-color;
+            z-index: -1;
+        }
+        }
+
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     left: -30px;
+        //     top: 320px;
+        //     width: 2px;
+        //     height: 100%;
+        //     background-color: #fff;
+        // }
     }
 }

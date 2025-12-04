@@ -13,16 +13,16 @@ export default function Info() {
 
             <main className="info-main">
                 <section className="info-links">
-                    <a href='/regulamin.pdf' className="red-underline">
-                        <img src="/icons/form.png" alt="form icon" />
+                    <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
+                        <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Regulamin</p>
                     </a>
-                    <a href='' className="red-underline">
-                        <img src="/icons/form.png" alt="form icon" />
+                    <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
+                        <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Karta Jury</p>
                     </a>
-                    <a href='' className="red-underline">
-                        <img src="/icons/form.png" alt="form icon" />
+                    <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
+                        <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Karta Techniczna</p>
                     </a>
                 </section>

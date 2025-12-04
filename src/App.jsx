@@ -1,5 +1,6 @@
 import { useState, React } from 'react'
 import './App.scss'
+import { Link } from 'react-router-dom'
 
 import Navbar from './components/nav.jsx'
 import Footer from './components/footer.jsx'
@@ -56,7 +57,6 @@ function App() {
         </header>
 
         <aside className='app-aside slideable'>
-          {/* <p className='quote'>Masz&nbsp;<em className='slideable'>zdanie?</em> Pokaż&nbsp;je&nbsp;w&nbsp;<em className='slideable'>debacie!</em></p> */}
           <p className='quote'>{quotes[r][1]}</p>
           <p className='quote-author'>{quotes[r][0]}</p>
         </aside>
@@ -64,17 +64,14 @@ function App() {
         <article className='app-article slideable'>
           <section className='app-article-background' draggable="true" />
           <section className='app-article-container'>
-            <img src="/icons/speaker.png" />
+            <img src="/debaty-zsem/icons/speaker.png" />
             <p> Debaty Elektryka to organizowane od wielu lat wydarzenie, w którym przedstawiciele klas mierzą się w dyskusjach na wybrane tematy. To nie tylko forma rywalizacji, ale przede wszystkim okazja do rozwijania umiejętności argumentacji, logicznego myślenia i pracy zespołowej.</p>
           </section>
         </article>
 
         <section className='app-learn-more slideable'>
           <section>
-            <p>Dowiedz się więcej </p>
-            {/* <span>
-              <img src="/background/arrow.svg" />
-            </span> */}
+            <Link to="/debaty-zsem/zasady"><p>Dowiedz się więcej</p></Link>
           </section>
         </section>
       </main>

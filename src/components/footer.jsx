@@ -23,20 +23,19 @@ export default function Footer() {
                     </div>
                 </div>
                 <div>
-                    {/* <p className="header">Odwiedź</p> */}
                     <div className="socials">
                         <div>
                             <span>
                                 <span className="logo-background"/>
-                                <img src="/logos/zsem.png" alt="ZSEM" className="social-logo zsem-logo" />
+                                <img src="/debaty-zsem/logos/logo_zsem.png" alt="ZSEM" className="social-logo" />
                             </span>
                             <div className="social_card ">
                                 <span>
-                                    <img src="/icons/website.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <img src="/debaty-zsem/icons/website.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://zsem.edu.pl">Strona</a>
                                 </span>
                                 <span>
-                                    <img src="/icons/facebook.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <img src="/debaty-zsem/icons/facebook.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://www.facebook.com/profile.php?id=100063594517495">Facebook</a>
                                 </span>
                             </div>
@@ -44,19 +43,19 @@ export default function Footer() {
                         <div>
                             <span>
                                 <span className="logo-background"/>
-                                <img src="/logos/logo_zsemtv.png" alt="ZSEM" className="social-logo" />
+                                <img src="/debaty-zsem/logos/logo_zsemtv.png" alt="ZSEM" className="social-logo" />
                             </span>
                             <div className="social_card ">
                                 <span>
-                                    <img src="/icons/instagram.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <img src="/debaty-zsem/icons/instagram.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://www.instagram.com/zsemtv/">Instagram</a>
                                 </span>
                                 <span>
-                                    <img src="/icons/facebook.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <img src="/debaty-zsem/icons/facebook.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://www.facebook.com/profile.php?id=100063594517495">Facebook</a>
                                 </span>
                                 <span>
-                                    <img src="/icons/youtube.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <img src="/debaty-zsem/icons/youtube.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://www.youtube.com/@ZSEMTVOFFICIAL">YouTube</a>
                                 </span>
                             </div>

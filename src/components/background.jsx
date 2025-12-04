@@ -2,7 +2,7 @@ import React from "react";
 import "./background.scss";
 
 export default function Background() {
-    const SVGS = ['/background/arrow.svg', '/background/circle.svg', '/background/circle-dashed.svg', '/background/line.svg', '/background/plus.svg', '/icons/people.png', '/icons/user-avatar.png'];
+    const SVGS = ['background/arrow.svg', 'background/circle.svg', 'background/circle-dashed.svg', 'background/line.svg', 'background/plus.svg', 'icons/people.png', 'icons/user-avatar.png'];
     const cols = Math.floor((window.innerWidth) / 100);
     const rows = Math.floor((window.innerHeight) / 100);
     let svgArray = [];
@@ -29,7 +29,7 @@ export default function Background() {
                                 '--rotation': `${r}deg`
                             }}
                             draggable="false">
-                                <img src={SVGS[val]} draggable="false"/>
+                                <img src={"/debaty-zsem/"+SVGS[val]} draggable="false"/>
                             </section>
                         );
                     }

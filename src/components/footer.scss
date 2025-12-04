@@ -5,8 +5,6 @@ footer {
     width: 100%;
     min-height: 140px;
     margin-top: 40px;
-    // bottom: 0;
-    // left: 0;
     justify-content: space-evenly;
     background-color: #0a0a0a;
     z-index: 100;
@@ -54,9 +52,6 @@ footer {
                 box-shadow: 0 0 15px #222222;
                 background-color: #1a1a1a;
                 z-index: -1;
-            }
-            .zsem-logo {
-                transform: scale(0.85);
             }
 
             .social_card {

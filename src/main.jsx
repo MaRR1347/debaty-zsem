@@ -12,11 +12,11 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App/>} />
-        <Route path='/rejestracja' element={<Register/>} />
-        <Route path='/harmonogram' element={<Ladder/>} />
-        <Route path='/zasady' element={<Rules/>} />
-        <Route path='/regulamin' element={<Info/>} />
+        <Route path="/debaty-zsem/" element={<App/>} />
+        <Route path='/debaty-zsem/rejestracja' element={<Register/>} />
+        <Route path='/debaty-zsem/harmonogram' element={<Ladder/>} />
+        <Route path='/debaty-zsem/zasady' element={<Rules/>} />
+        <Route path='/debaty-zsem/regulamin' element={<Info/>} />
       </Routes>
      </BrowserRouter>
   </StrictMode>,
