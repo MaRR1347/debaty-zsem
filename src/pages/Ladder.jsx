@@ -9,13 +9,15 @@ export default function Ladder() {
     return (
         <>
             <Background />
-            <Navbar />
+            <Navbar activePage="ladder"/>
 
             <main>
                 <p>Harmonogram zostanie umieszczony po zakończeniu rejestracji</p>
             </main>
 
+            <section className='footer-sticky'>
             <Footer />
+            </section>
         </>
     )
 }

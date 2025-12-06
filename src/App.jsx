@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Background />
-      <Navbar />
+      <Navbar activePage="home"/>
 
       <main>
         <header className='app-header'>

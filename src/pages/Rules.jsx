@@ -8,8 +8,8 @@ import Footer from "../components/footer.jsx";
 export default function Rules() {
     return (
         <>
-            {/* <Background /> */}
-            <Navbar />
+            <Background />
+            <Navbar activePage="rules"/>
 
             <main>
                 <section className="general-rules">
@@ -36,14 +36,12 @@ export default function Rules() {
                             W przypadku braku zgody pomiędzy drużynami - ich stanowiska będą wyłaniane poprzez rzut monetą tuż przed rozpoczęciem debaty!
                         </p>
                     </section>
-                    <section className="rule-card">
-
-                    </section>
 
                 </section>
                 <section className="specific-rules">
                     <h2>Przebieg debaty</h2>
                     <section className="stage-card">
+                        <span className="stage-name">ETAP 1</span>
                         <h3>Wprowadzenie</h3>
                         <section>
                             <h4>Kolejność mówców</h4>
@@ -72,22 +70,61 @@ export default function Rules() {
                                 </ul>
                                 <p>Rozwijają dalsze argumenty i kontrują argumenty oponentów</p>
                             </section>
+                            <p>Każda wypowiedź trwa maksymalnie 3 minuty</p>
                         </section>
                     </section>
-                    <section className="stage-card">
-                        <p>Ciąg dalszy nastąpi</p>
-                    </section>
-                    <section className="stage-card">
 
-                    </section>
                     <section className="stage-card">
+                        <span className="stage-name">ETAP 2</span>
+                        <h3>Pytania drużynowe</h3>
+                        <section>
+                            <p>Drużyny zadają sobie nawzajem pytania:
+                                Każdy może zadać jedno pytanie i każdy może otrzymać jedno pytanie (łącznie 3 pytania od drużyny)</p>
 
+                            <p>*Może się pojawić także czwarte pytanie (ogólne) - do odpowiedzi zgłasza się dowolny oponent</p>
+                            <p>Każdy uczestnik ma:</p>
+                            <ul>
+                                <li>30 sekund na zadanie pytania</li>
+                                <li>60 sekund na odpowiedź</li>
+                                <li>20 sekund na ripostę</li>
+                            </ul>
+                        </section>
                     </section>
-                    <section className="stage-card">
 
+                    <section className="stage-card">
+                        <span className="stage-name">ETAP 3</span>
+
+                        <h3>Pytania od jury i prowadzących</h3>
+                        <section>
+                            <p>Drużyny otrzymują po 3 pytania nawiązujące do ich stanowiska</p>
+                            <p>Każdy mówca musi zgłosić się do jednego pytania</p>
+                            <p>Czas na odpowiedź to 90 sekund</p>
+                            <p>*Pytania w pierwszej kolejności zadawane są od jury, a następnie wybrane spośród pytań ankietowanych</p>
+                        </section>
                     </section>
-                    <section className="stage-card">
 
+                    <section className="stage-card">
+                        <span className="stage-name">ETAP 4</span>
+
+                        <h3>"Familiada"</h3>
+                        <section>
+                            <p>Z obu drużyn wylosowane osoby stają do pojedynku 1 na 1</p>
+                            <p>Prowadzący zadaje pytanie ogólne - kto pierwszy się zgłosi, ma na odpowiedź 40 sekund </p>
+                            <p>Następnie odpowiada jego przeciwnik, który ma jedynie 20 sekund </p>
+                            <p>Każdy mówca bierze udział w pojedynku dokładnie raz</p>
+                        </section>
+                    </section>
+
+                    <section className="stage-card">
+                        <span className="stage-name">ETAP 5</span>
+
+                        <h3>Pytania od publiczności</h3>
+                        <p>Nie ma sztywnego limitu czasowego, lecz warto pamiętać, że czym bardziej zwięzła i konkretna odpowiedź, tym więcej punktów można uzyskać</p>
+                    </section>
+
+                    <section className="stage-card">
+                        <span className="stage-name">ETAP 6</span>
+                        <h3>Swobodna dyskusja</h3>
                     </section>
                 </section>
             </main>

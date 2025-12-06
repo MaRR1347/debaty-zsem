@@ -19,7 +19,7 @@ export default function Footer() {
                 <div>
                     <p className="header">Kontakt</p>
                     <div>
-                        <p>debaty@zsem.edu.pl</p>
+                        <a href="mailto:debaty@zsem.edu.pl" className="zsem_mail">debaty@zsem.edu.pl</a>
                     </div>
                 </div>
                 <div>
@@ -33,6 +33,10 @@ export default function Footer() {
                                 <span>
                                     <img src="/debaty-zsem/icons/website.svg" width="16" height="16" viewBox="0 0 16 16" />
                                     <a href="https://zsem.edu.pl">Strona</a>
+                                </span>
+                                <span>
+                                    <img src="/debaty-zsem/icons/instagram.svg" width="16" height="16" viewBox="0 0 16 16" />
+                                    <a href="https://www.instagram.com/zsemns/">Instagram</a>
                                 </span>
                                 <span>
                                     <img src="/debaty-zsem/icons/facebook.svg" width="16" height="16" viewBox="0 0 16 16" />

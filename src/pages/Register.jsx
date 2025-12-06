@@ -25,7 +25,7 @@ export default function Register() {
   return (
     <>
       <Background />
-      <Navbar />
+      <Navbar activePage="register"/>
 
       <main className='register-main'>
         <header>Rejestracja</header>
@@ -35,11 +35,11 @@ export default function Register() {
           <a href="https://tiny.pl/7nc6ny1b" className='red-underline'>
             <img src="/debaty-zsem/icons/form.png" alt="formularz"/>
           </a>
-          <p>Rejestracja trwa do 28.11.2025r.</p>
+          <p>Rejestracja trwa do 14.12.2025r.</p>
         </section>
       </main>
 
-      <section className='footer'>
+      <section className='footer-sticky'>
         <Footer />
       </section>
     </>

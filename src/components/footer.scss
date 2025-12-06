@@ -1,3 +1,6 @@
+$secondary-color: #080808;
+$accent-color: #e31e24;
+
 footer {
     display: flex;
     position: relative;
@@ -15,6 +18,17 @@ footer {
         font-weight: 600;
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .zsem_mail {
+        color: #fff;
+        text-decoration: none;
+        :hover {
+            color: $accent-color;
+        }
+        :active {
+            color: $accent-color;
+        }
     }
 
     .socials {
@@ -49,7 +63,7 @@ footer {
                 height: 80px;
                 left: 10px;
                 border-radius: 50%;
-                box-shadow: 0 0 15px #222222;
+                box-shadow: 0 0 12px 5px #1a1a1a;
                 background-color: #1a1a1a;
                 z-index: -1;
             }
@@ -59,7 +73,6 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                // margin-left: 10px;
                 opacity: 0.8;
                 transition: opacity 0.3s;
 

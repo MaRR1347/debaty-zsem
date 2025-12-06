@@ -28,14 +28,13 @@ $accent-color: #e31e24;
 
 body {
   box-sizing: border-box;
-  padding-top: 120px;
   width: 100vw;
   user-select: none;
   
-  @include respond-to(phone) {
-    padding: 160px 0 0 0;
-    width: 100vw;
-  }
+  // @include respond-to(phone) {
+  //   padding: 160px 0 0 0;
+  //   width: 100vw;
+  // }
 }
 
 main {
@@ -320,7 +319,7 @@ main {
     }
 }
 
-.footer {
+.footer-sticky {
     position: fixed;
     width: 100vw;
     left: 0;
@@ -328,9 +327,6 @@ main {
     background: transparent;
     z-index: 1000;
 
-    @include respond-to(phone) {
-        position: relative;
-    }
 }
 
 //-----------------------ANIMATIONS-----------------------
