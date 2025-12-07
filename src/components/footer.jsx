@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./footer.scss";
 
 export default function Footer() {
-
-    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-        checkbox.addEventListener("change", (event) => {
-            if (event.target.checked) {
-                event.target.nextElementSibling?.classList.add('active');
-            } else {
-                event.target.nextElementSibling?.classList.remove('active');
-            }
-        });
-    });
+    useEffect(() => {
+        // try {
+        //     window.alert(`${document.body.scrollHeight}, ${window.innerHeight}, ${document.querySelector(".footer").classList}`);
+        // } catch (e) { alert(e); }
+        if (document.body.scrollHeight < window.innerHeight) {
+            document.querySelector(".footer").classList.add("footer-fixed");
+        }
+    })
 
     return (
         <>
-            <footer>
+            <footer className="footer">
                 <div>
                     <p className="header">Kontakt</p>
                     <div>
@@ -26,7 +24,7 @@ export default function Footer() {
                     <div className="socials">
                         <div>
                             <span>
-                                <span className="logo-background"/>
+                                <span className="logo-background" />
                                 <img src="/debaty-zsem/logos/logo_zsem.png" alt="ZSEM" className="social-logo" />
                             </span>
                             <div className="social_card ">
@@ -46,7 +44,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <span>
-                                <span className="logo-background"/>
+                                <span className="logo-background" />
                                 <img src="/debaty-zsem/logos/logo_zsemtv.png" alt="ZSEM" className="social-logo" />
                             </span>
                             <div className="social_card ">

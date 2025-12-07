@@ -288,5 +288,12 @@ $accent-color: #e31e24;
         ul li {
             font-size: 1rem;
         }
+        .stage-table ul li {
+            width: auto !important;
+        }
+    }
+
+    .align-center {
+        align-items: center !important;
     }
 }

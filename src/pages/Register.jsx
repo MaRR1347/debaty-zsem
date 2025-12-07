@@ -25,23 +25,22 @@ export default function Register() {
   return (
     <>
       <Background />
-      <Navbar activePage="register"/>
+      <Navbar activePage="register" />
 
       <main className='register-main'>
-        <header>Rejestracja</header>
+        <h2>Rejestracja</h2>
 
         <section>
           <p>Aby zarejestrować swoją drużynę, wejdź w poniższy link i wypełnij formularz zgłoszeniowy: </p>
           <a href="https://tiny.pl/7nc6ny1b" className='red-underline'>
-            <img src="/debaty-zsem/icons/form.png" alt="formularz"/>
+            <img src="/debaty-zsem/icons/form.png" alt="formularz" />
           </a>
           <p>Rejestracja trwa do 14.12.2025r.</p>
+          <p>Ilość drużyn limitowana</p>
         </section>
       </main>
 
-      <section className='footer-sticky'>
-        <Footer />
-      </section>
+      <Footer />
     </>
   )
 }

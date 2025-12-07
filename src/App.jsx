@@ -11,21 +11,21 @@ import Background from './components/background.jsx'
 function App() {
   const quotes = [
     ["~Antoine de Saint-Exupéry",
-      "Prawdziwa rozmowa polega na słuchaniu i zrozumieniu, nie na wygrywaniu."],
+      "„Prawdziwa rozmowa polega na słuchaniu i zrozumieniu, nie na wygrywaniu.”"],
     ["~John F. Kennedy",
-      "Chociaż nie możemy zmienić przeszłości, możemy zmienić sposób, w jaki będziemy ze sobą rozmawiać w przyszłości."],
+      "„Chociaż nie możemy zmienić przeszłości, możemy zmienić sposób, w jaki będziemy ze sobą rozmawiać w przyszłości.”"],
     ["~Martin Luther King Jr.",
-      "Ci, którzy odrzucają przemoc, muszą pozostać otwarci na dialog. W przeciwnym razie nie będzie sposobu na zrozumienie siebie nawzajem."],
+      "„Ci, którzy odrzucają przemoc, muszą pozostać otwarci na dialog. W przeciwnym razie nie będzie sposobu na zrozumienie siebie nawzajem.”"],
     ["~Mahatma Gandhi",
-      "Jeśli milczymy, nie rozwiązujemy żadnych problemów; rozwiązanie w każdej sytuacji jest w rozmowie."],
+      "„Jeśli milczymy, nie rozwiązujemy żadnych problemów; rozwiązanie w każdej sytuacji jest w rozmowie.”"],
     ["~Eleanor Roosevelt",
-      "Wielkie rzeczy są osiągane przez współpracę, rozmowy, a nie przez indywidualne działania."],
+      "„Wielkie rzeczy są osiągane przez współpracę, rozmowy, a nie przez indywidualne działania.”"],
     ["~Margaret Thatcher",
-      "Rozmowa jest jedną z najważniejszych dróg do osiągnięcia porozumienia w trudnych sytuacjach."],
+      "„Rozmowa jest jedną z najważniejszych dróg do osiągnięcia porozumienia w trudnych sytuacjach.”"],
     ["~Nelson Mandela",
-      "Rozmowa jest najpotężniejszym narzędziem, jakie mamy do rozwiązywania problemów i budowania porozumienia."],
+      "„Rozmowa jest najpotężniejszym narzędziem, jakie mamy do rozwiązywania problemów i budowania porozumienia.”"],
     ["Desmond Tutu",
-      "Jeśli nie rozmawiamy, nie budujemy mostów. Jeśli nie budujemy mostów, pogłębiamy przepaść."]
+      "„Jeśli nie rozmawiamy, nie budujemy mostów. Jeśli nie budujemy mostów, pogłębiamy przepaść.”"]
   ]
   let r = Math.floor(Math.random() * quotes.length);
 
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Background />
-      <Navbar activePage="home"/>
+      <Navbar activePage="home" />
 
       <main>
         <header className='app-header'>

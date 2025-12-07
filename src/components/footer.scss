@@ -6,11 +6,13 @@ footer {
     position: relative;
     flex-wrap: wrap;
     width: 100%;
+    bottom: 0;
     min-height: 140px;
     margin-top: 40px;
     justify-content: space-evenly;
     background-color: #0a0a0a;
     z-index: 100;
+
 
     .header {
         color: #ffffff;
@@ -23,9 +25,11 @@ footer {
     .zsem_mail {
         color: #fff;
         text-decoration: none;
+
         :hover {
             color: $accent-color;
         }
+
         :active {
             color: $accent-color;
         }
@@ -52,9 +56,11 @@ footer {
                 height: 80px;
                 margin: 0 10px;
             }
+
             >span {
                 position: relative;
             }
+
             .logo-background {
                 position: absolute;
                 display: block;
@@ -92,7 +98,7 @@ footer {
                     }
 
                     a {
-                        color: #bbb;                        
+                        color: #bbb;
                         font-size: 1rem;
                         font-weight: 400;
 
@@ -104,4 +110,13 @@ footer {
             }
         }
     }
+}
+
+.footer-fixed {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    // background: transparent;
+    // z-index: 1000;
 }

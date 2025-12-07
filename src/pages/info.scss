@@ -1,18 +1,17 @@
 $secondary-color: #080808;
 $accent-color: #e31e24;
 
-main {
-    width: 100vw;
-
-    header {
-        font-size: 2rem;
-        font-weight: 700;
-    }
+.info-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .info-links {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 30px 0;
 
         a {
             display: flex;

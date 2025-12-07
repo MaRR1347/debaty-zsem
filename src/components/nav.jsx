@@ -7,12 +7,21 @@ export default function Navbar(activePage) {
 
     function toggleVisibility(name) {
         document.querySelector(`.${name}`).classList.toggle("visible");
-    } 
+    }
     
+    document.ontouchend = () => {
+        if (document.querySelector(`.nav-links`).classList.contains("visible")) {
+            setTimeout(() => {
+                document.querySelector(`.nav-links`).classList.remove("visible");
+            }, 10
+            )
+        }
+    }
+
     return (
         <>
             <section className="nav-container">
-                <section className="nav-outline" onClick={() =>toggleVisibility("nav-links")}/>
+                <section className="nav-outline" onClick={() => toggleVisibility("nav-links")} />
                 <section className="nav-content">
                     <section className="nav-home">
                         <Link to="/debaty-zsem/" className={`${activePage == "home" ? "active" : ""}`}><span className="oswald-font font-700">Debaty</span>{'\u00A0'}<span className="oswald-font font-400">ZSEM</span></Link>

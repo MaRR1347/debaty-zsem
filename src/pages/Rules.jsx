@@ -8,7 +8,7 @@ import Footer from "../components/footer.jsx";
 export default function Rules() {
     return (
         <>
-            {/* <Background /> */}
+            <Background />
             <Navbar activePage="rules" />
 
             <main className="rules-main">
@@ -106,7 +106,7 @@ export default function Rules() {
                         </section>
 
                         <h3>Pytania od jury i prowadzących</h3>
-                        <section className="stage-content">
+                        <section className="stage-content align-center">
                             <p>Drużyny otrzymują po 3 pytania nawiązujące do ich stanowiska</p>
                             <p>Każdy mówca musi zgłosić się do jednego pytania</p>
                             <p>Czas na odpowiedź to 90 sekund</p>
@@ -121,7 +121,7 @@ export default function Rules() {
                         </section>
 
                         <h3>"Familiada"</h3>
-                        <section className="stage-content">
+                        <section className="stage-content align-center">
                             <p>Z obu drużyn wylosowane osoby stają do pojedynku 1 na 1</p>
                             <p>Prowadzący zadaje pytanie ogólne - kto pierwszy się zgłosi, ma na odpowiedź 40 sekund </p>
                             <p>Następnie odpowiada jego przeciwnik, który ma jedynie 20 sekund </p>

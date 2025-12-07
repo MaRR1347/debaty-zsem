@@ -9,7 +9,7 @@ export default function Info() {
     return (
         <>
             <Background />
-            <Navbar />
+            <Navbar activePage="info" />
 
             <main className="info-main">
                 <section className="info-links">
@@ -17,20 +17,19 @@ export default function Info() {
                         <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Regulamin</p>
                     </a>
-                    <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
+                    {/* <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
                         <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Karta Jury</p>
                     </a>
                     <a href='/debaty-zsem/regulamin.pdf' className="red-underline">
                         <img src="/debaty-zsem/icons/form.png" alt="form icon" />
                         <p>Karta Techniczna</p>
-                    </a>
+                    </a> */}
                 </section>
+                    <h3>Karta jury oraz karta techniczna zostaną opublikowane wraz z zakończeniem etapu rejestracji</h3>
             </main>
 
-            <footer className="footer">
-                <Footer />
-            </footer>
+            <Footer />
         </>
     )
 }

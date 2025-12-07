@@ -30,11 +30,6 @@ body {
   box-sizing: border-box;
   width: 100vw;
   user-select: none;
-  
-  // @include respond-to(phone) {
-  //   padding: 160px 0 0 0;
-  //   width: 100vw;
-  // }
 }
 
 main {
@@ -317,16 +312,6 @@ main {
     &:hover {
       box-shadow: 0 0 35px -5px $accent-color;
     }
-}
-
-.footer-sticky {
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    bottom: 0;
-    background: transparent;
-    z-index: 1000;
-
 }
 
 //-----------------------ANIMATIONS-----------------------
