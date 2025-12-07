@@ -8,10 +8,10 @@ import Footer from "../components/footer.jsx";
 export default function Rules() {
     return (
         <>
-            <Background />
-            <Navbar activePage="rules"/>
+            {/* <Background /> */}
+            <Navbar activePage="rules" />
 
-            <main>
+            <main className="rules-main">
                 <section className="general-rules">
                     <h2>Informacje ogólne</h2>
                     <section className="rule-card">
@@ -38,14 +38,19 @@ export default function Rules() {
                     </section>
 
                 </section>
+
+                <h2>Przebieg debaty</h2>
+
                 <section className="specific-rules">
-                    <h2>Przebieg debaty</h2>
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 1</span>
+                        <section className="stage-name first-stage-name">
+                            <p>ETAP 1</p>
+                            <span/>
+                        </section>
                         <h3>Wprowadzenie</h3>
-                        <section>
+                        <section className="stage-content">
                             <h4>Kolejność mówców</h4>
-                            <section className="flex-row-align">
+                            <section className="stage-table">
                                 <ul>
                                     <li>Mówca 1 propozycji</li>
                                     <li>Mówca 1 opozycji</li>
@@ -54,7 +59,7 @@ export default function Rules() {
                             </section>
                             <hr />
 
-                            <section className="flex-row-align">
+                            <section className="stage-table">
                                 <ul>
                                     <li>Mówca 2 propozycji</li>
                                     <li>Mówca 2 opozycji</li>
@@ -63,7 +68,7 @@ export default function Rules() {
                             </section>
                             <hr />
 
-                            <section className="flex-row-align">
+                            <section className="stage-table">
                                 <ul>
                                     <li>Mówca 3 propozycji</li>
                                     <li>Mówca 3 opozycji</li>
@@ -75,9 +80,12 @@ export default function Rules() {
                     </section>
 
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 2</span>
+                        <section className="stage-name">
+                            <p>ETAP 2</p>
+                            <span />
+                        </section>
                         <h3>Pytania drużynowe</h3>
-                        <section>
+                        <section className="stage-content">
                             <p>Drużyny zadają sobie nawzajem pytania:
                                 Każdy może zadać jedno pytanie i każdy może otrzymać jedno pytanie (łącznie 3 pytania od drużyny)</p>
 
@@ -92,10 +100,13 @@ export default function Rules() {
                     </section>
 
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 3</span>
+                        <section className="stage-name">
+                            <p>ETAP 3</p>
+                            <span />
+                        </section>
 
                         <h3>Pytania od jury i prowadzących</h3>
-                        <section>
+                        <section className="stage-content">
                             <p>Drużyny otrzymują po 3 pytania nawiązujące do ich stanowiska</p>
                             <p>Każdy mówca musi zgłosić się do jednego pytania</p>
                             <p>Czas na odpowiedź to 90 sekund</p>
@@ -104,10 +115,13 @@ export default function Rules() {
                     </section>
 
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 4</span>
+                        <section className="stage-name">
+                            <p>ETAP 4</p>
+                            <span />
+                        </section>
 
                         <h3>"Familiada"</h3>
-                        <section>
+                        <section className="stage-content">
                             <p>Z obu drużyn wylosowane osoby stają do pojedynku 1 na 1</p>
                             <p>Prowadzący zadaje pytanie ogólne - kto pierwszy się zgłosi, ma na odpowiedź 40 sekund </p>
                             <p>Następnie odpowiada jego przeciwnik, który ma jedynie 20 sekund </p>
@@ -116,14 +130,20 @@ export default function Rules() {
                     </section>
 
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 5</span>
+                        <section className="stage-name">
+                            <p>ETAP 5</p>
+                            <span />
+                        </section>
 
                         <h3>Pytania od publiczności</h3>
                         <p>Nie ma sztywnego limitu czasowego, lecz warto pamiętać, że czym bardziej zwięzła i konkretna odpowiedź, tym więcej punktów można uzyskać</p>
                     </section>
 
                     <section className="stage-card">
-                        <span className="stage-name">ETAP 6</span>
+                        <section className="stage-name last-stage-name">
+                            <p>ETAP 6</p>
+                            <span />
+                        </section>
                         <h3>Swobodna dyskusja</h3>
                     </section>
                 </section>

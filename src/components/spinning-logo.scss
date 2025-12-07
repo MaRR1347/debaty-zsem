@@ -1,8 +1,23 @@
 @keyframes logo-spin {
-    from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  17% {
+    transform: rotate(60deg);
+  }
+  33% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  67% {
+    transform: rotate(240deg);
+  }
+  83% {
+    transform: rotate(300deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -10,7 +25,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  animation: logo-spin infinite 25s linear;
+  animation: logo-spin infinite 25s ease-in-out;
   width: 150px;
 }
 .logo-content {

@@ -12,7 +12,7 @@ export default function Ladder() {
             <Navbar activePage="ladder"/>
 
             <main>
-                <p>Harmonogram zostanie umieszczony po zakończeniu rejestracji</p>
+                <h2>Harmonogram zostanie umieszczony po zakończeniu rejestracji</h2>
             </main>
 
             <section className='footer-sticky'>
