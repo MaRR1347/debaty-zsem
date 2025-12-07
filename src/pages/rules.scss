@@ -27,11 +27,6 @@ $accent-color: #e31e24;
     align-items: center;
     position: relative;
 
-    h2 {
-        font-size: 3rem;
-        margin: 20px 0;
-    }
-
     .general-rules,
     .specific-rules {
         display: flex;
@@ -40,23 +35,6 @@ $accent-color: #e31e24;
         margin: 40px 0;
         position: relative;
         border: 0;
-
-
-        h3 {
-            font-size: 2rem;
-            margin: 10px 0;
-        }
-
-        h4 {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            text-align: center;
-        }
     }
 
     .general-rules {
@@ -98,8 +76,7 @@ $accent-color: #e31e24;
         transform: translateX(100px);
 
         .stage-card {
-            min-width: 300px;
-            width: 50vw;
+            width: 60vw;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -132,24 +109,10 @@ $accent-color: #e31e24;
                     }
                 }
 
-                ul {
-                    box-sizing: border-box;
-
-                    li {
-                        font-size: 1.3em;
-                        text-align: left;
-                    }
-                }
-
                 hr {
                     margin: -10px 0;
                     width: 100%;
                 }
-            }
-
-            h3 {
-                font-size: 2rem;
-                margin-bottom: 10px;
             }
 
             .stage-name {
@@ -162,7 +125,7 @@ $accent-color: #e31e24;
                 left: -180px;
                 top: 0;
                 transform: translateY(50%);
-                
+
                 p {
                     width: 80px;
                     height: 80px;
@@ -190,6 +153,7 @@ $accent-color: #e31e24;
 
             .last-stage-name {
                 transform: translateY(24px);
+
                 span {
                     background-color: #0f0f0f;
                 }
@@ -208,22 +172,48 @@ $accent-color: #e31e24;
                 background-color: $accent-color;
                 z-index: -1;
             }
+        }
+    }
 
+    h2 {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 1.3rem;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    ul {
+        box-sizing: border-box;
+
+        li {
+            font-size: 1.3em;
+            text-align: left;
+        }
+    }
+
+    @include respond-to(tablet) {
+        .general-rules {
+            width: 80vw;
         }
 
-        // &::before {
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     left: -165px;
-        //     top: 360px;
-        //     width: 2px;
-        //     height: 100%;
-        //     background-color: #fff;
-        // }
-
-        @include respond-to(tablet) {
+        .specific-rules {
             .stage-card {
+                width: 75vw;
+
                 .stage-name {
                     left: -130px;
                 }
@@ -233,8 +223,19 @@ $accent-color: #e31e24;
                 left: -95px;
             }
         }
+    }
 
-        @include respond-to(phone) {
+    @include respond-to(phone) {
+        .general-rules {
+            width: 100vw;
+            border-radius: 0;
+
+            &::before {
+                border-radius: 0;
+            }
+        }
+
+        .specific-rules {
             transform: none;
 
             .stage-card {
@@ -242,11 +243,50 @@ $accent-color: #e31e24;
                 width: 100vw;
                 border-radius: 0;
                 box-sizing: border-box;
+
+                .stage-name {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    transform: none;
+
+                    p {
+                        height: auto;
+                        width: 120px;
+                        margin: 15px auto;
+                        padding: 5px;
+                        line-height: normal;
+                        font-size: 1.2rem;
+                        border-radius: 10px;
+                        box-shadow: 0 3px 1px #fff;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
             }
 
             &::before {
                 display: none;
             }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        p,
+        ul li {
+            font-size: 1rem;
         }
     }
 }
